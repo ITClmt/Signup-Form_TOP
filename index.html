@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign-up Form by ITClmt</title>
+  </head>
+  <body>
+    <main>
+      <section id="left-page">
+        <div class="title">
+          <h1>SIGN-UP FORM</h1>
+          <p>
+            By <a href="https://github.com/ITClmt/Sign-up_Form_TOP">ITClmt</a>
+          </p>
+        </div>
+      </section>
+      <section id="right-page">
+        <h2>WELCOME !</h2>
+        <p>Join us for a new life</p>
+        <div class="form_container">
+          <h3>Sign-up</h3>
+          <form autocomplete="off" action="#" method="post">
+            <div class="input_container">
+              <label for="first_name">First Name*</label>
+              <input
+                type="text"
+                name="first_name"
+                id="first_name"
+                placeholder="John.."
+                data-error="Please enter your first name"
+                required
+              />
+            </div>
+            <div class="input_container">
+              <label for="last_name">Last Name*</label>
+              <input
+                type="text"
+                name="last_name"
+                id="last_name"
+                placeholder="Doe.."
+                data-error="Please enter your last name"
+                required
+              />
+            </div>
+            <div class="input_container">
+              <label for="user-email">Email*</label>
+              <input
+                type="email"
+                id="user-email"
+                name="user-email"
+                placeholder=" John.Doe@mail.com"
+                minlength="3"
+                maxlength="50"
+                data-error="Please enter a valid email address"
+                required
+              />
+            </div>
+            <div class="input_container">
+              <label for="user-phone">Phone Number*</label>
+              <input
+                type="tel"
+                id="user-phone"
+                name="user-phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                placeholder="555-666-7777"
+                required
+              />
+            </div>
+            <div class="input_container">
+              <label for="password">Password*</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                minlength="6"
+                maxlength="20"
+                placeholder="******"
+                required
+              />
+            </div>
+            <div class="input_container">
+              <label for="confirm-password">Confirm Password*</label>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                minlength="6"
+                maxlength="20"
+                placeholder="******"
+                required
+              />
+            </div>
+            <div id="btn-container">
+              <button type="#">Create Account</button>
+              <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
